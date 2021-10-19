@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+#nav-bar{
+    /*flex-box:*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    /*żeby przylegał do krawędzi:*/
+    position: fixed; /* z relative nie działa :( */
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 10vh;
+    /*visual*/
+    background-color: aliceblue;
+    border-bottom: solid 2px black;
+}
+#logo{
+    width: 40%;
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    align-self: center;
+}
+#links{
+    display:flex;
+    justify-content: end;
+    width:60%;
+}
+.nav-button{
+    /*dot. znacznika <a>*/
+    display: block;
+    /*visual*/
+    margin: 0 10px 0 10px;
+    text-align: center;
+    text-decoration: none;
+    color:rgb(7, 7, 7);
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1rem;
+}
+main{
+    height: 100%;
+    width: 100%;
+    margin-top: 11vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.countries_after{
+    //po wybraniu jednego z krajów
+    display:flex;
+    width: 100%;
+    height: auto;
+    justify-content: end;
+}
+.countries_before{
+    //pierwsze załadowanie countries
+    justify-content: center;
+    display:flex;
+    width: 100%;
+}
+#countries{
+    //ogólne właściwości diva countries
+    display:flex;
+    align-items: center;
+    button{
+        margin: 0 0.5vw 0 0.5vw;
+        width: auto;
+        height: auto;
+        padding: 10px 30px 10px 30px;
+        border: 1px solid rgb(27, 27, 27);
+        border-radius: 20px;
+    }
+}
+.country_holder{
+    //to co jest przed wyborek kraju
+    width:auto;
+}
+.country_holder_main{
+    //nie zmieniać!
+    width:auto;
+    height:auto;
+}
+#slider{
+    width: 100%;
+    height: 400px;
+    align-self: center;
+}
+img{
+    margin: 0 auto;
+    display: block;
+    max-height: 100%;
+    max-width: 80%;
+}
+footer{
+    text-align: center;
+}
+@media(max-width:768px){
+    #logo{
+        display:none;
+        width: 40%;
+        font-family: 'Great Vibes', cursive;
+        font-size: 3rem;
+        align-self: center;
+    }
+    #links{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    #navbar{
+        justify-content: center;
+    }
+}
+@media(max-width:320px){
+    .nav-button{
+        font-size: 0.99rem;
+    }
+}
+@media(min-width:1440px){
+    .nav-button{
+        font-size: 1.25rem;
+    }
+}

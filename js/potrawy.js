@@ -1,0 +1,10 @@
+import {changeCountry} from './main.js';
+var first=true;
+var anglia = document.createElement("div"); anglia.id="country_content"; anglia.innerHTML="anglia";
+var walia = document.createElement("div"); walia.id="country_content"; walia.innerHTML="walia";
+var szkocja = document.createElement("div"); szkocja.id="country_content"; szkocja.innerHTML="szkocja";
+var irlandia = document.createElement("div"); irlandia.id="country_content"; irlandia.innerHTML="irlandia północna";
+document.querySelector("#anglia").addEventListener("click", ()=>{changeCountry(anglia, first);first=false});
+document.querySelector("#walia").addEventListener("click", ()=>{changeCountry(walia, first);first=false});
+document.querySelector("#szkocja").addEventListener("click", ()=>{changeCountry(szkocja, first);first=false});
+document.querySelector("#irlandia").addEventListener("click", ()=>{changeCountry(irlandia, first);first=false});

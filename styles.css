@@ -1,0 +1,185 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+#nav-bar {
+  /*flex-box:*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  /*żeby przylegał do krawędzi:*/
+  position: fixed;
+  /* z relative nie działa :( */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 10vh;
+  /*visual*/
+  background-color: aliceblue;
+  border-bottom: solid 2px black;
+}
+
+#logo {
+  width: 40%;
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 60%;
+}
+
+.nav-button {
+  /*dot. znacznika <a>*/
+  display: block;
+  /*visual*/
+  margin: 0 10px 0 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #070707;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1rem;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  margin-top: 11vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.countries_after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.countries_before {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+#countries {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#countries button {
+  margin: 0 0.5vw 0 0.5vw;
+  width: auto;
+  height: auto;
+  padding: 10px 30px 10px 30px;
+  border: 1px solid #1b1b1b;
+  border-radius: 20px;
+}
+
+.country_holder {
+  width: auto;
+}
+
+.country_holder_main {
+  width: auto;
+  height: auto;
+}
+
+#slider {
+  width: 100%;
+  height: 400px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+img {
+  margin: 0 auto;
+  display: block;
+  max-height: 100%;
+  max-width: 80%;
+}
+
+footer {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #logo {
+    display: none;
+    width: 40%;
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  #links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  #navbar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .nav-button {
+    font-size: 0.99rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .nav-button {
+    font-size: 1.25rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
