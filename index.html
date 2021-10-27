@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Przewodnik kulturowy</title>
+    <style>
+        #zdjecia{
+            display: flex;
+        }
+    </style>
 </head>
 <body>
     <!--nawigacja strony:-->
@@ -17,18 +22,29 @@
             <a class="nav-button" href="tradycje.html">Tradycje</a>
             <a class="nav-button" href="zabytki.html">Zabytki</a>
         </div>
-        <script src="js/main.js"></script>
+        <script src=""></script>
     </nav>
     <main>
-        <figure id="slider">
-            <img src="media/img/flag.png" alt="britain_flag">
-        </figure>
-        <p>Test paragraph</p>
+        <section id="o_stronie">
+            <h2>
+                O stornie
+            </h2>
+            <p>Informacje o stronie. Znajdziesz tu to co tu włożymy. Aktualnie czekam na tekst od Szymona, więc cierpliwości!</p>
+        </section>
+        <section id="WB">
+            <h2>
+                Krótka historia Wielkiej Brytanii
+            </h2>
+            <p>Tutaj krótka historia Wielkiej Brytanii.<br><br> Tutaj zdjęcia:</p>
+            <div id="zdjecia">
+
+            </div>
+        </section>
     </main>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>  
-    <footer>empty</footer>
+    <footer>footer</footer>
 </body>
 </html>

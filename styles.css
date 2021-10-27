@@ -24,8 +24,9 @@
   width: 100vw;
   height: 10vh;
   /*visual*/
-  background-color: aliceblue;
-  border-bottom: solid 2px black;
+  background-color: #bee1ff;
+  border-bottom: solid 2px #1b1b1b;
+  color: #1b1b1b;
 }
 
 #logo {
@@ -54,12 +55,13 @@
   margin: 0 10px 0 10px;
   text-align: center;
   text-decoration: none;
-  color: #070707;
-  font-family: 'Fira Sans', sans-serif;
+  color: #1b1b1b;
+  font-family: 'Lato', sans-serif;
   font-size: 1rem;
 }
 
 main {
+  font-family: 'Lato', sans-serif;
   height: 100%;
   width: 100%;
   margin-top: 11vh;
@@ -73,6 +75,27 @@ main {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+section {
+  height: auto;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #1b1b1b;
+}
+
+#o_stronie, #WB {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 95vw;
+  padding: 0 2.5vw 0 2.5vw;
 }
 
 .countries_after {
@@ -121,21 +144,6 @@ main {
 .country_holder_main {
   width: auto;
   height: auto;
-}
-
-#slider {
-  width: 100%;
-  height: 400px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-img {
-  margin: 0 auto;
-  display: block;
-  max-height: 100%;
-  max-width: 80%;
 }
 
 footer {

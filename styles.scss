@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+$text-color: rgb(27, 27, 27);
 #nav-bar{
     /*flex-box:*/
     display: flex;
@@ -13,8 +14,9 @@
     width: 100vw;
     height: 10vh;
     /*visual*/
-    background-color: aliceblue;
-    border-bottom: solid 2px black;
+    background-color: rgb(190, 225, 255);
+    border-bottom: solid 2px $text-color;
+    color: $text-color;
 }
 #logo{
     width: 40%;
@@ -34,17 +36,36 @@
     margin: 0 10px 0 10px;
     text-align: center;
     text-decoration: none;
-    color:rgb(7, 7, 7);
-    font-family: 'Fira Sans', sans-serif;
+    color: $text-color;
+    font-family: 'Lato', sans-serif;
     font-size: 1rem;
 }
 main{
+    font-family: 'Lato', sans-serif;
     height: 100%;
     width: 100%;
     margin-top: 11vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+section{
+    height:auto;
+    h2{
+        font-size: 2rem;
+        color: $text-color;
+    }
+}
+@mixin flex(){
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+}
+#o_stronie, #WB{
+    //o stronie w index.html i wielka brytania index.html
+    @include flex;
+    width:95vw;
+    padding: 0 2.5vw 0 2.5vw;
 }
 .countries_after{
     //po wybraniu jednego z krajów
@@ -68,7 +89,7 @@ main{
         width: auto;
         height: auto;
         padding: 10px 30px 10px 30px;
-        border: 1px solid rgb(27, 27, 27);
+        border: 1px solid $text-color;
         border-radius: 20px;
     }
 }
@@ -80,17 +101,6 @@ main{
     //nie zmieniać!
     width:auto;
     height:auto;
-}
-#slider{
-    width: 100%;
-    height: 400px;
-    align-self: center;
-}
-img{
-    margin: 0 auto;
-    display: block;
-    max-height: 100%;
-    max-width: 80%;
 }
 footer{
     text-align: center;
