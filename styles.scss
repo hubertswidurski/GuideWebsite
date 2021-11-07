@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 $text-color: rgb(27, 27, 27);
+$blue: rgb(190, 225, 255);
+$lighter-blue: rgb(217, 236, 252);
+body, html{
+    width:100%;/*naprawia dziwny błąd ze scrollbarem*/
+    height:fit-content;
+    margin:0;
+    padding:0;
+}
 #nav-bar{
     /*flex-box:*/
     display: flex;
@@ -11,10 +19,10 @@ $text-color: rgb(27, 27, 27);
     position: fixed; /* z relative nie działa :( */
     top:0;
     left:0;
-    width: 100vw;
+    width: 100%;
     height: 10vh;
     /*visual*/
-    background-color: rgb(190, 225, 255);
+    background-color: $blue;
     border-bottom: solid 2px $text-color;
     color: $text-color;
 }
@@ -27,6 +35,7 @@ $text-color: rgb(27, 27, 27);
 #links{
     display:flex;
     justify-content: end;
+    padding-right: 3vw;
     width:60%;
 }
 .nav-button{
@@ -40,11 +49,19 @@ $text-color: rgb(27, 27, 27);
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
 }
+#topper{
+    position:fixed;
+    bottom:1vh;
+    right:1vh;
+    width: 2vw;
+    height:2vw;
+    background:rgb(143, 41, 41);
+    border-radius: 50%;
+}
 main{
     font-family: 'Lato', sans-serif;
-    height: 100%;
-    width: 100%;
-    margin-top: 11vh;
+    width: auto;
+    margin-top: 5vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -62,7 +79,7 @@ section{
     //justify-content: center;
 }
 #o_stronie, #WB{
-    //o stronie w index.html i wielka brytania index.html
+    /*o stronie w index.html i wielka brytania index.html*/
     @include flex;
     width:95vw;
     padding: 0 2.5vw 0 2.5vw;
@@ -78,29 +95,48 @@ section{
     //pierwsze załadowanie countries
     justify-content: center;
     display:flex;
+    flex-wrap: wrap;
     width: 100%;
 }
 #countries{
     //ogólne właściwości diva countries
     display:flex;
+    margin-top: 11vh;
     align-items: center;
     button{
-        margin: 0 0.5vw 0 0.5vw;
-        width: auto;
-        height: auto;
+        display:block;
+        background: white;
+        width: 100%;
+        height: 5vh;
         padding: 10px 30px 10px 30px;
         border: 1px solid $text-color;
         border-radius: 20px;
     }
+    button:hover{
+        transition: all 0.2s;
+        background:$lighter-blue;
+    }
 }
 .country_holder{
     //to co jest przed wyborek kraju
-    width:auto;
+    width: auto;
+    background: #dfdfdf;
+    padding: 1vh;
+    border-radius: 0 0 25px 25px;
 }
 .country_holder_main{
     //nie zmieniać!
+    margin:0 0.5vw 0 0.5vw;
     width:auto;
     height:auto;
+}
+.country_img{
+    max-width:20vw;
+    img{
+        display:block;
+        //max-width:20vw;
+        max-height: 30vh;
+    }
 }
 footer{
     text-align: center;
@@ -108,10 +144,6 @@ footer{
 @media(max-width:768px){
     #logo{
         display:none;
-        width: 40%;
-        font-family: 'Great Vibes', cursive;
-        font-size: 3rem;
-        align-self: center;
     }
     #links{
         display: flex;
@@ -119,8 +151,9 @@ footer{
         justify-content: center;
         width: 100%;
     }
-    #navbar{
+    #nav-bar{
         justify-content: center;
+        width: 100%;
     }
 }
 @media(max-width:320px){

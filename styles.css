@@ -1,6 +1,16 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+body, html {
+  width: 100%;
+  /*naprawia dziwny błąd ze scrollbarem*/
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+}
+
 #nav-bar {
   /*flex-box:*/
   display: -webkit-box;
@@ -21,7 +31,7 @@
   /* z relative nie działa :( */
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 10vh;
   /*visual*/
   background-color: #bee1ff;
@@ -45,6 +55,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  padding-right: 3vw;
   width: 60%;
 }
 
@@ -60,11 +71,20 @@
   font-size: 1rem;
 }
 
+#topper {
+  position: fixed;
+  bottom: 1vh;
+  right: 1vh;
+  width: 2vw;
+  height: 2vw;
+  background: #8f2929;
+  border-radius: 50%;
+}
+
 main {
   font-family: 'Lato', sans-serif;
-  height: 100%;
-  width: 100%;
-  margin-top: 11vh;
+  width: auto;
+  margin-top: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,6 +107,7 @@ section h2 {
 }
 
 #o_stronie, #WB {
+  /*o stronie w index.html i wielka brytania index.html*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,6 +137,8 @@ section h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
 }
 
@@ -123,27 +146,48 @@ section h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 11vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 #countries button {
-  margin: 0 0.5vw 0 0.5vw;
-  width: auto;
-  height: auto;
+  display: block;
+  background: white;
+  width: 100%;
+  height: 5vh;
   padding: 10px 30px 10px 30px;
   border: 1px solid #1b1b1b;
   border-radius: 20px;
 }
 
+#countries button:hover {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background: #d9ecfc;
+}
+
 .country_holder {
   width: auto;
+  background: #dfdfdf;
+  padding: 1vh;
+  border-radius: 0 0 25px 25px;
 }
 
 .country_holder_main {
+  margin: 0 0.5vw 0 0.5vw;
   width: auto;
   height: auto;
+}
+
+.country_img {
+  max-width: 20vw;
+}
+
+.country_img img {
+  display: block;
+  max-height: 30vh;
 }
 
 footer {
@@ -153,12 +197,6 @@ footer {
 @media (max-width: 768px) {
   #logo {
     display: none;
-    width: 40%;
-    font-family: 'Great Vibes', cursive;
-    font-size: 3rem;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
   }
   #links {
     display: -webkit-box;
@@ -172,10 +210,11 @@ footer {
             justify-content: center;
     width: 100%;
   }
-  #navbar {
+  #nav-bar {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 100%;
   }
 }
 
