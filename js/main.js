@@ -20,6 +20,7 @@ export function changeCountry(child, first){
         }
     }
     let element = document.getElementById('country_content');
+    document.getElementById('explanation').remove();
     if (typeof(element) != 'undefined' && element != null)
     {
         element.remove();

@@ -8,7 +8,7 @@
 </head>
 <body id="start">
     <!--nawigacja strony:-->
-    <div id="nav-bar">
+    <div id="nav-bar" style="z-index: 100;">
         <a id="logo" class="nav-button" href="index.html">Wielka Brytania</a>
         <nav id="links">
             <a class="nav-button" href="index.html" onmouseover="" onmouseleave="">Strona Główna</a>
@@ -18,6 +18,7 @@
         </nav>
     </div>
     <!--wybór kraju:-->
+    <h2 id="explanation" style=" z-index:0; position:relative; top:10vh; padding-left: 2vw; font-size:2em; color:rgb(27, 27, 27)">Wybierz kraj, o kótrego potawach chcesz się dowiedzieć:</h2>
     <div id="countries" class="countries_before">
         <div class="country_holder country_holder_main">
             <picture class="country_img"><img src="media/img/Full_english.jpg"></picture><br>
@@ -36,8 +37,36 @@
             <button type="button" id="irlandia" href="#">Irlandia Północna</button>
         </div>
     </div>
-    <main style="width: 90vw; padding: 0 5vh 0 5vh;">
-
+    <main style="width: 90%; padding: 0% 5% 0% 5%;">
+        <section id="sec-anglia" class="country-content">
+            <div class="container1">
+                <article>
+                    <h2>Fish and Chips</h2>
+                    ryba z frytkami, potrawa popularna zwłaszcza w regionach nadbrzeżnych, ale znana i kochana w całej Anglii
+                </article>
+                <picture>
+                    <img src="media/img/fish_and_chips.jpg" alt="fish and chips na talerzu">
+                </picture>
+            </div>
+            <div class="container2">
+                <article>
+                    <h2>Banger and Mash</h2>
+                    kiełbasa z tłuczonymi ziemniakami, często w połączeniu z grochem i sosem gravy, kolejne bardzo popularne danie w całym kraju
+                </article>
+                <picture>
+                    <img src="media/img/banger_and_mash.jpg" alt="fish and chips na talerzu">
+                </picture>
+            </div>
+        </section>
+        <section id="sec-walia" class="country-content">
+            
+        </section>
+        <section id="sec-szkocja" class="country-content">
+            
+        </section>
+        <section id="sec-irlandia" class="country-content">
+            
+        </section>
     </main>
     <script type="module" src="js/potrawy.js"></script>
     <footer>footer</footer>

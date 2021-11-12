@@ -9,6 +9,7 @@ body, html {
   height: fit-content;
   margin: 0;
   padding: 0;
+  font-family: 'Lato', sans-serif;
 }
 
 #nav-bar {
@@ -106,6 +107,132 @@ section h2 {
   color: #1b1b1b;
 }
 
+.country-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
+.country-content .container1 {
+  background: #d9ecfc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 1vh;
+  width: 100%;
+  border-radius: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  min-height: 40vh;
+}
+
+.country-content .container1 article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 2vh 0 2vh;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-height: inherit !important;
+  width: 40%;
+}
+
+.country-content .container1 picture {
+  display: block;
+  padding: 2vh 2vh 2vh 2vh;
+  width: auto;
+  max-height: 100%;
+}
+
+.country-content .container1 picture img {
+  border: 5px solid #7a7a7a;
+  border-radius: 1em;
+  max-height: 37vh;
+  max-width: 100%;
+}
+
+.country-content .container2 {
+  background: #e6e6e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 1vh;
+  width: 100%;
+  border-radius: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  min-height: 40vh;
+}
+
+.country-content .container2 article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 2vh 0 2vh;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-height: inherit !important;
+  width: 40%;
+}
+
+.country-content .container2 picture {
+  display: block;
+  padding: 2vh 2vh 2vh 2vh;
+  width: auto;
+  max-height: 100%;
+}
+
+.country-content .container2 picture img {
+  border: 5px solid #7a7a7a;
+  border-radius: 1em;
+  max-height: 37vh;
+  max-width: 100%;
+}
+
 #o_stronie, #WB {
   /*o stronie w index.html i wielka brytania index.html*/
   display: -webkit-box;
@@ -172,7 +299,7 @@ section h2 {
   width: auto;
   background: #dfdfdf;
   padding: 1vh;
-  border-radius: 0 0 25px 25px;
+  border-radius: 1em;
 }
 
 .country_holder_main {
@@ -188,6 +315,7 @@ section h2 {
 .country_img img {
   display: block;
   max-height: 30vh;
+  border-radius: 1em;
 }
 
 footer {

@@ -3,11 +3,21 @@
 $text-color: rgb(27, 27, 27);
 $blue: rgb(190, 225, 255);
 $lighter-blue: rgb(217, 236, 252);
+@mixin flex(){
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+}
+@mixin flex-row(){
+    display: flex;
+    flex-direction: row;
+}
 body, html{
     width:100%;/*naprawia dziwny błąd ze scrollbarem*/
     height:fit-content;
     margin:0;
     padding:0;
+    font-family: 'Lato', sans-serif;
 }
 #nav-bar{
     /*flex-box:*/
@@ -73,10 +83,48 @@ section{
         color: $text-color;
     }
 }
-@mixin flex(){
-    display: flex;
-    flex-direction: column;
-    //justify-content: center;
+@mixin cont{
+    @include flex-row;
+    margin-top:1vh;
+    width:100%;
+    border-radius: 2em;
+    align-items:center;
+    justify-content: space-evenly;
+    min-height:40vh;
+    article{
+        @include flex;//flex-column
+        padding:0 2vh 0 2vh;
+        align-self: baseline;
+        justify-content: start;
+        align-items: flex-start;
+        min-height:inherit !important;
+        width:40%;
+    }
+    picture{
+        display: block;
+        padding:2vh 2vh 2vh 2vh;
+        width:auto;
+        max-height: 100%;
+        img{
+            border: 5px solid #7a7a7a;
+            border-radius: 1em;
+            max-height: 37vh;
+            max-width:100%;
+        }
+    }
+}
+.country-content{//
+    @include flex;//flex-column
+    justify-content: space-evenly;
+    width:100%;
+    .container1{
+        background: $lighter-blue;
+        @include cont;
+    }
+    .container2{
+        background: rgb(230, 230, 230);
+        @include cont;
+    }
 }
 #o_stronie, #WB{
     /*o stronie w index.html i wielka brytania index.html*/
@@ -122,7 +170,7 @@ section{
     width: auto;
     background: #dfdfdf;
     padding: 1vh;
-    border-radius: 0 0 25px 25px;
+    border-radius: 1em;
 }
 .country_holder_main{
     //nie zmieniać!
@@ -136,6 +184,7 @@ section{
         display:block;
         //max-width:20vw;
         max-height: 30vh;
+        border-radius:1em;
     }
 }
 footer{
