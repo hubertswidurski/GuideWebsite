@@ -18,7 +18,7 @@
         </nav>
     </div>
     <!--wybór kraju:-->
-    <h2 id="explanation" style=" z-index:0; position:relative; top:10vh; padding-left: 2vw; font-size:2em; color:rgb(27, 27, 27)">Wybierz kraj, o kótrego potawach chcesz się dowiedzieć:</h2>
+    <h2 id="explanation" style=" z-index:0; position:relative; top:10vh; padding-left: 2vw; font-size:2em; color:rgb(27, 27, 27)">Wybierz kraj, o kótrego potrawach chcesz się dowiedzieć:</h2>
     <div id="countries" class="countries_before">
         <div class="country_holder country_holder_main">
             <picture class="country_img"><img src="media/img/Full_english.jpg"></picture><br>
@@ -44,6 +44,7 @@
                 <article>
                     <h2>Fish and Chips</h2>
                     ryba z frytkami, potrawa popularna zwłaszcza w regionach nadbrzeżnych, ale znana i kochana w całej Anglii
+                    <br><button type="button" onclick="appendPrzepis()">przepis</button>
                 </article>
                 <picture>
                     <img src="media/img/fish_and_chips.jpg" alt="fish and chips na talerzu">
@@ -52,7 +53,7 @@
             <div class="container2">
                 <article>
                     <h2>Banger and Mash</h2>
-                    kiełbasa z tłuczonymi ziemniakami, często w połączeniu z grochem i sosem gravy, kolejne bardzo popularne danie w całym kraju
+                    Bangers and mash – potrawa kuchni angielskiej, w której skład wchodzą kiełbaski (bangers) i porcja tłuczonych ziemniaków (mash). Danie przyrządzane jest z kiełbas wieprzowych (w szczególności Cumberland sausage), wołowych lub jagnięcych. Jako dodatek często stosuje się sos cebulowy. Bangers and mash jest popularnym daniem serwowanym w brytyjskich pubach.
                 </article>
                 <picture>
                     <img src="media/img/banger_and_mash.jpg" alt="fish and chips na talerzu">
@@ -97,7 +98,17 @@
         </section>
     </main>
     <script type="module" src="js/potrawy.js"></script>
-    <footer>footer</footer>
+    <script>
+        function appendPrzepis(){ //nie działa w potrawy.js gdyż funkcje w modułach nie są globalnie dostepne
+            if(document.querySelector("#przepis")==null){
+                let przepis = document.createElement("div");
+                przepis.innerHTML = "to jest przepis na coś tam <br><button type='button' onclick='this.parentElement.remove()'>OK</button>";
+                przepis.id="przepis";
+                document.querySelector("main").appendChild(przepis);
+            }
+        }
+    </script>
+    <footer style="display:none;">footer</footer>
     <a id="topper" href="#"><img src="/media/icons/"></a>
 </body>
 <!--

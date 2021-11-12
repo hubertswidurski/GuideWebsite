@@ -14,10 +14,29 @@ $lighter-blue: rgb(217, 236, 252);
 }
 body, html{
     width:100%;/*naprawia dziwny błąd ze scrollbarem*/
-    height:fit-content;
     margin:0;
     padding:0;
     font-family: 'Lato', sans-serif;
+}
+#przepis{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    position: fixed;
+    z-index: 2;
+    left: 25%;
+    width:50vw;
+    height: 10vh;
+    background:rgba(27, 27, 27, 0.95);
+    color: white;
+    border-radius: 1em;
+    button{
+        padding:5px 10px;
+        width:6em;
+        border:1px solid white;
+        border-radius: 1em;
+    }
 }
 #nav-bar{
     /*flex-box:*/
@@ -99,6 +118,7 @@ section{
         align-items: flex-start;
         min-height:inherit !important;
         width:40%;
+        font-size: 1.2em;
     }
     picture{
         display: block;
@@ -189,6 +209,10 @@ section{
 }
 footer{
     text-align: center;
+    background: $text-color;
+    color: white;
+    padding:1vh 0;
+    margin-top:1vh;
 }
 @media(max-width:768px){
     #logo{
