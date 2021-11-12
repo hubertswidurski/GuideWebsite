@@ -1,11 +1,7 @@
 import {changeCountry, scrollTop} from './main.js';
 var first=true;
-var anglia = document.createElement("div"); anglia.id="country_content"; anglia.innerHTML="zabytki - anglia";
-var walia = document.createElement("div"); walia.id="country_content"; walia.innerHTML="zabytki - walia";
-var szkocja = document.createElement("div"); szkocja.id="country_content"; szkocja.innerHTML="zabytki - szkocja";
-var irlandia = document.createElement("div"); irlandia.id="country_content"; irlandia.innerHTML="zabytki - irlandia północna";
-document.querySelector("#anglia").addEventListener("click", ()=>{changeCountry(anglia, first);first=false});
-document.querySelector("#walia").addEventListener("click", ()=>{changeCountry(walia, first);first=false});
-document.querySelector("#szkocja").addEventListener("click", ()=>{changeCountry(szkocja, first);first=false});
-document.querySelector("#irlandia").addEventListener("click", ()=>{changeCountry(irlandia, first);first=false});
+document.querySelector("#anglia").addEventListener("click", ()=>{changeCountry("sec-anglia", first);first=false});
+document.querySelector("#walia").addEventListener("click", ()=>{changeCountry("sec-walia", first);first=false});
+document.querySelector("#szkocja").addEventListener("click", ()=>{changeCountry("sec-szkocja", first);first=false});
+document.querySelector("#irlandia").addEventListener("click", ()=>{changeCountry("sec-irlandia", first);first=false});
 document.querySelector("#topper").addEventListener("click", ()=> scrollTop());

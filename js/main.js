@@ -19,13 +19,19 @@ export function changeCountry(child, first){
             borders[i].classList.remove("country_holder");
         }
     }
-    let element = document.getElementById('country_content');
-    document.getElementById('explanation').remove();
-    if (typeof(element) != 'undefined' && element != null)
-    {
-        element.remove();
+    if(document.getElementById('explanation')!=null){
+        document.getElementById('explanation').remove();
     }
-    document.querySelector("main").appendChild(child);
+    const array= document.querySelector("main").children;
+    for(let i =0; i< array.length; i++){
+        if(array[i].tagName =="SECTION"){
+            if(array[i].id == child){
+                array[i].style.display="flex";
+            }else{
+                array[i].style.display="none";
+            }
+        }
+    }
 }
 export function scrollTop() {
     document.body.scrollTop = 0;
