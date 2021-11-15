@@ -16,9 +16,9 @@ $lighter-blue: rgb(217, 236, 252);
     overflow-x: hidden;
 }
 h2, h1{
-    overflow: hidden;
+    overflow: hidden !important;
     height:auto;
-    min-height:1.5em;
+    min-height:1.5em !important;
 }
 body, html{//gloabal
     width:100%;/*naprawia dziwny błąd ze scrollbarem*/

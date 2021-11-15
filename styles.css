@@ -6,9 +6,9 @@
 }
 
 h2, h1 {
-  overflow: hidden;
+  overflow: hidden !important;
   height: auto;
-  min-height: 1.5em;
+  min-height: 1.5em !important;
 }
 
 body, html {
