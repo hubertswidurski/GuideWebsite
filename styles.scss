@@ -3,22 +3,30 @@
 $text-color: rgb(27, 27, 27);
 $blue: rgb(190, 225, 255);
 $lighter-blue: rgb(217, 236, 252);
-@mixin flex(){
+@mixin flex(){//gloabal
     display: flex;
     flex-direction: column;
     //justify-content: center;
 }
-@mixin flex-row(){
+@mixin flex-row(){//gloabal
     display: flex;
     flex-direction: row;
 }
-body, html{
+*{
+    overflow-x: hidden;
+}
+h2, h1{
+    overflow: hidden;
+    height:auto;
+    min-height:1.5em;
+}
+body, html{//gloabal
     width:100%;/*naprawia dziwny błąd ze scrollbarem*/
     margin:0;
     padding:0;
     font-family: 'Lato', sans-serif;
 }
-#przepis{
+#przepis{//none
     display: flex;
     align-items:center;
     justify-content:center;
@@ -38,7 +46,7 @@ body, html{
         border-radius: 1em;
     }
 }
-#nav-bar{
+#nav-bar{//gloabal
     /*flex-box:*/
     display: flex;
     flex-direction: row;
@@ -55,19 +63,19 @@ body, html{
     border-bottom: solid 2px $text-color;
     color: $text-color;
 }
-#logo{
+#logo{//gloabal
     width: 40%;
     font-family: 'Great Vibes', cursive;
     font-size: 3rem;
     align-self: center;
 }
-#links{
+#links{//gloabal
     display:flex;
     justify-content: end;
     padding-right: 3vw;
     width:60%;
 }
-.nav-button{
+.nav-button{//gloabal
     /*dot. znacznika <a>*/
     display: block;
     /*visual*/
@@ -78,7 +86,7 @@ body, html{
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
 }
-#topper{
+#topper{//gloabal
     position:fixed;
     bottom:1vh;
     right:1vh;
@@ -87,7 +95,7 @@ body, html{
     background:rgb(143, 41, 41);
     border-radius: 50%;
 }
-main{
+main{//global
     font-family: 'Lato', sans-serif;
     width: auto;
     margin-top: 5vh;
@@ -95,24 +103,24 @@ main{
     flex-direction: column;
     align-items: flex-start;
 }
-section{
+section{//global
     height:auto;
     h2{
         font-size: 2rem;
         color: $text-color;
     }
 }
-@mixin cont{
+@mixin cont{//potrawy.html
     @include flex-row;
     margin-top:1vh;
     width:100%;
     border-radius: 2em;
     align-items:center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     min-height:40vh;
     article{
         @include flex;//flex-column
-        padding:0 2vh 0 2vh;
+        padding:0 2vh 0 10%;
         align-self: baseline;
         justify-content: center;
         align-items: flex-start;
@@ -123,7 +131,7 @@ section{
     }
     picture{
         display: block;
-        padding:2vh 2vh 2vh 2vh;
+        padding:2vh 10% 2vh 2vh;
         width:auto;
         max-height: 100%;
         img{
@@ -134,10 +142,14 @@ section{
         }
     }
 }
-.country-content{//
+.country-content{//potrawy.html
     @include flex;//flex-column
     justify-content: space-evenly;
     width:100%;
+    h1{
+        font-size:2.5em;
+        color:$text-color;
+    }
     .container1{
         background: $lighter-blue;
         @include cont;
@@ -147,27 +159,27 @@ section{
         @include cont;
     }
 }
-#o_stronie, #WB{
+#o_stronie, #WB{//index.html
     /*o stronie w index.html i wielka brytania index.html*/
     @include flex;
     width:95vw;
     padding: 0 2.5vw 0 2.5vw;
 }
-.countries_after{
+.countries_after{//gloabal
     //po wybraniu jednego z krajów
     display:flex;
     width: 100%;
     height: auto;
     justify-content: end;
 }
-.countries_before{
+.countries_before{//gloabal
     //pierwsze załadowanie countries
     justify-content: center;
     display:flex;
     flex-wrap: wrap;
     width: 100%;
 }
-#countries{
+#countries{//gloabal
     //ogólne właściwości diva countries
     display:flex;
     margin-top: 11vh;
@@ -186,20 +198,20 @@ section{
         background:$lighter-blue;
     }
 }
-.country_holder{
+.country_holder{//gloabal
     //to co jest przed wyborek kraju
     width: auto;
     background: #dfdfdf;
     padding: 1vh;
     border-radius: 1em;
 }
-.country_holder_main{
+.country_holder_main{//gloabal
     //nie zmieniać!
     margin:0 0.5vw 0 0.5vw;
     width:auto;
     height:auto;
 }
-.country_img{
+.country_img{//gloabal
     max-width:20vw;
     img{
         display:block;
@@ -208,7 +220,7 @@ section{
         border-radius:1em;
     }
 }
-footer{
+footer{//gloabal
     text-align: center;
     background: $text-color;
     color: white;

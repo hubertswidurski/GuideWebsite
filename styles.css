@@ -1,6 +1,16 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+* {
+  overflow-x: hidden;
+}
+
+h2, h1 {
+  overflow: hidden;
+  height: auto;
+  min-height: 1.5em;
+}
+
 body, html {
   width: 100%;
   /*naprawia dziwny błąd ze scrollbarem*/
@@ -149,6 +159,11 @@ section h2 {
   width: 100%;
 }
 
+.country-content h1 {
+  font-size: 2.5em;
+  color: #1b1b1b;
+}
+
 .country-content .container1 {
   background: #d9ecfc;
   display: -webkit-box;
@@ -164,9 +179,9 @@ section h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-height: 40vh;
 }
 
@@ -178,7 +193,7 @@ section h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 2vh 0 2vh;
+  padding: 0 2vh 0 10%;
   -ms-flex-item-align: baseline;
       align-self: baseline;
   -webkit-box-pack: center;
@@ -195,7 +210,7 @@ section h2 {
 
 .country-content .container1 picture {
   display: block;
-  padding: 2vh 2vh 2vh 2vh;
+  padding: 2vh 10% 2vh 2vh;
   width: auto;
   max-height: 100%;
 }
@@ -222,9 +237,9 @@ section h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-height: 40vh;
 }
 
@@ -236,7 +251,7 @@ section h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 2vh 0 2vh;
+  padding: 0 2vh 0 10%;
   -ms-flex-item-align: baseline;
       align-self: baseline;
   -webkit-box-pack: center;
@@ -253,7 +268,7 @@ section h2 {
 
 .country-content .container2 picture {
   display: block;
-  padding: 2vh 2vh 2vh 2vh;
+  padding: 2vh 10% 2vh 2vh;
   width: auto;
   max-height: 100%;
 }
