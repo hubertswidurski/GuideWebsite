@@ -135,6 +135,7 @@ main {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  overflow-x: hidden;
 }
 
 section {
