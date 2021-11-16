@@ -19,6 +19,7 @@ h2, h1{
     overflow: hidden !important;
     height:auto;
     min-height:1.5em !important;
+    padding: 5px 0;
 }
 body, html{//gloabal
     width:100%;/*naprawia dziwny błąd ze scrollbarem*/
@@ -56,6 +57,7 @@ body, html{//gloabal
     /*żeby przylegał do krawędzi:*/
     position: fixed; /* z relative nie działa :( */
     top:0;
+    z-index:100;
     left:0;
     width: 100%;
     height: 10vh;
@@ -164,8 +166,11 @@ section{//global
 #o_stronie, #WB{//index.html
     /*o stronie w index.html i wielka brytania index.html*/
     @include flex;
-    width:95vw;
+    width:100%;
     padding: 0 2.5vw 0 2.5vw;
+    align-items: center;
+    height:fit-content;
+    overflow: hidden;
 }
 .countries_after{//gloabal
     //po wybraniu jednego z krajów
@@ -228,6 +233,43 @@ footer{//gloabal
     color: white;
     padding:1vh 0;
     margin-top:1vh;
+}
+article.atraction{ //zabytki.html
+    @include flex;//flex-column
+    padding:2vh 10%;
+    align-self: center;
+    justify-content: center;
+    align-items: flex-start;
+    min-height:inherit !important;
+    width:80%;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    button.show-localization{
+        width: 20%;
+        height: 3em;
+        border: 1px solid $text-color;
+        border-radius: 2em;
+        background: white;
+        color:$text-color;
+        align-self:center;
+        &:hover{
+            background: $lighter-blue;
+            transition:0.1s
+        }   
+    }
+    picture{
+        max-width:60%;
+        padding:0 20%;
+        img{
+            max-width:80%;
+            height:auto;
+            padding:0 10%;
+        }
+    }
+    iframe{
+        display: block;
+        align-self: center;
+    }
 }
 @media(max-width:768px){
     #logo{

@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Przewodnik kulturowy</title>
     <style>
-        #zdjecia{
+        article{
+            width: 60%;
             display: flex;
+            flex-direction: column;
+            overflow:hidden;
+        }
+        article picture{
+            align-self: center;
+            display:flex;
+            align-items: center;
+            width:100%;
         }
     </style>
 </head>
@@ -20,28 +28,49 @@
             <a class="nav-button" href="index.html" onmouseover="" onmouseleave="">Strona Główna</a>
             <a class="nav-button" href="potrawy.html">Potrawy</a>
             <a class="nav-button" href="tradycje.html">Tradycje</a>
-            <a class="nav-button" href="zabytki.html">Zabytki</a>
+            <a class="nav-button" href="zabytki.html">Atrakcje</a>
         </nav>
     </div>
     <main style="margin-top: 11vh; line-height: 1.5em;">
         <section id="o_stronie">
-            <h2>
-                O stornie
-            </h2>
-            <p>Witaj na przewodniku kulturowym po Wielkiej Brytanii! Znajdziesz tutaj inofrmacje o wartych odwiedzenia zabytkach i tradycyjnych potrawach poszczególnych krajów wchodzących w skład Zjednoczone Królestwo Wielkiej Brytanii i Irlandii Północnej. Dodatkowo znjdziesz tu też informacje o tradycjach i zwyczajach obowiązujących w Wielkiej Brytanii.
-                Wszystko to uzupełnione starannie dobranymi fotografiami. Życzymy miłego czytania!</p>
+            <article>
+                <h2>
+                    O stornie
+                </h2>
+                <p>Witaj na przewodniku kulturowym po Wielkiej Brytanii! Znajdziesz tutaj inofrmacje o wartych odwiedzenia zabytkach i tradycyjnych potrawach poszczególnych krajów wchodzących w skład Zjednoczone Królestwo Wielkiej Brytanii i Irlandii Północnej. Dodatkowo znjdziesz tu też informacje o tradycjach i zwyczajach obowiązujących w Wielkiej Brytanii.
+                    Wszystko to uzupełnione starannie dobranymi fotografiami. Życzymy miłego czytania!</p>
+            </article>
         </section>
-        <section id="WB" data-aos="fade-right">
-            <h2>
-                Krótka historia Wielkiej Brytanii
-            </h2>
-            <p>Wiesz już co możesz spodziewać się zobzaczyć nas naszej stronie. Jednak</p>
+        <section id="WB">
+            <article>
+                <h2>
+                    Czym jest Wielka Brytania?
+                </h2>
+                <p>Wielka Brytania, Zjednoczone Królestwo (ang. United Kingdom) – unitarne państwo, w skład którego zalicza się Anglia, Walia i Szkocja położone na wyspie Wielka Brytania oraz Irlandia Północna leżąca w północnej części wyspy Irlandia. Na wyspie tej znajduje się jedyna granica lądowa Zjednoczonego Królestwa z innym państwem – Irlandią. Poza nią Wielka Brytania otoczona jest przez Ocean Atlantycki na zachodzie i północy, Morze Północne na wschodzie, kanał La Manche na południu i Morze Irlandzkie na zachodzie.</p>
+            </article>
+            <article>
+                <h2>Powstanie Wielkiej brytanii</h2>
+                <p>
+                    <h3>Najważniejsze wydarzenia:</h3>
+                    <ol>
+                        <li>1. Na mocy Przepisów Prawnych Walii 1535–1542 Walia została zaanektowana przed Anglię i włączona do jej systemu prawnego.</li>
+                        <li>2. Unia angielsko-szkocka zawarta w 1707 stworzyła nowe państwo – Królestwo Wielkiej Brytanii.</li>
+                        <li>3. Królestwo Wielkiej Brytanii istniało do 31 grudnia 1800 r., kiedy to na mocy Aktu unii z 1800 r. zostało połączone z Królestwem Irlandii i przekształcone w Zjednoczone Królestwo Wielkiej Brytanii i Irlandii.</li>
+                    </ol>
+                </p>
+            </article>
+            <article>
+                <h2>
+                    Ewolucja flagi
+                </h2>
+                <p>Flaga Wielkiej Brytanii zmieniała się wraz dołączaniem się do niej poszczególnych krajów:</p>
+                <picture style="margin: 0 auto;">
+                    <img src="media/img/other/Flags_of_the_Union_Jack.png" style="max-width:100%;" alt="ewolucja flagi Wielkiej Brytanii">
+                </picture>
+            </article>
         </section>
+        
     </main>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>  
-    <footer>footer</footer>
+    <footer>Created by</footer>
 </body>
 </html>

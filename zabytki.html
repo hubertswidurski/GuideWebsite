@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Przewodnik kulturowy</title>
+    <title>Atrakcje - Wielka Brytania</title>
 </head>
 <body id="start">
     <!--nawigacja strony:-->
@@ -14,40 +14,42 @@
             <a class="nav-button" href="index.html" onmouseover="" onmouseleave="">Strona Główna</a>
             <a class="nav-button" href="potrawy.html">Potrawy</a>
             <a class="nav-button" href="tradycje.html">Tradycje</a>
-            <a class="nav-button" href="zabytki.html">Zabytki</a>
+            <a class="nav-button" href="zabytki.html">Atrakcje</a>
         </nav>
     </div>
     <!--wybór kraju:-->
-    <h2 id="explanation" style=" z-index:0; position:relative; top:10vh; padding-left: 2vw; font-size:2em; color:rgb(27, 27, 27)">Wybierz kraj, o kótrego zabytki chcesz przeglądać:</h2>
+    <h2 id="explanation" style=" z-index:0; position:relative; top:10vh; padding-left: 2vw; font-size:2em; color:rgb(27, 27, 27)">Wybierz kraj, kótrego atrakcje chcesz zobaczyć:</h2>
     <div id="countries" class="countries_before">
         <div class="country_holder country_holder_main">
-            <picture class="country_img"><img src="media/img/Full_english.jpg"></picture><br>
+            <picture class="country_img"><img src="media/img/atrakcje/big_ben.jpg" alt="big ben"></picture><br>
             <button type="button" id="anglia" href="#">Anglia</button>
         </div>
         <div class="country_holder country_holder_main">
-            <picture class="country_img"><img src="media/img/welsh_rarebit.jpg"></picture><br>
+            <picture class="country_img"><img src="media/img/atrakcje/llyn-idwal.jpg" alt="jezioro"></picture><br>
             <button type="button" id="walia" href="#">Walia</button>
         </div>
         <div class="country_holder country_holder_main">
-            <picture class="country_img"><img src="media/img/cullen_skink.jpg"></picture><br>
+            <picture class="country_img"><img src="media/img/atrakcje/kelpies.jpg" alt="The Kelpies, Scotland"></picture><br>
             <button type="button" id="szkocja" href="#">Szkocja</button>
         </div>
         <div class="country_holder country_holder_main">
-            <picture class="country_img"><img src="media/img/soda_bread.png"></picture><br>
+            <picture class="country_img"><img src="media/img/atrakcje/The_Giants_Causeway.jpg" alt="The Giant's Causeway"></picture><br>
             <button type="button" id="irlandia" href="#">Irlandia Północna</button>
         </div>
     </div>
     <main style="width: 90vw; padding: 0 5vh 0 5vh;">
         <!--anglia-->
         <section id="sec-anglia" class="country-content" style="display: none;">
-            <div class="container1">
-                <article>
-                    <h2></h2>
-                </article>
+            <article class="atraction">
+                <h2>1.Zabytek</h2>
                 <picture>
-                    
+                    <img src="media/img/atrakcje/big_ben.jpg" alt="Big Ben">
                 </picture>
-            </div>
+                <button class="show-localization">
+                    poaż lokalizację
+                </button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor felis non dignissim maximus. Nulla facilisi. Ut hendrerit viverra nibh, quis interdum libero lacinia ac. Quisque a justo lobortis, sodales urna et, bibendum lacus. Praesent commodo ultrices neque, vel aliquam ipsum. Duis aliquam, lorem in tempus egestas, ex dui mollis lectus, ac placerat turpis sapien nec mi. Etiam scelerisque augue ipsum. Proin at orci leo. Maecenas mi tortor, aliquet vitae ullamcorper sit amet, dictum a neque. Donec vel suscipit tellus. Ut ullamcorper maximus mi, ac laoreet ligula maximus et.</p>
+            </article>
         </section>
         <!--walia-->
         <section id="sec-walia" class="country-content" style="display: none;">
@@ -63,7 +65,7 @@
         </section>
     </main>
     <script type="module" src="js/zabytki.js"></script>
-    <footer>footer</footer>
+    <footer>Created by</footer>
     <a id="topper" href="#"><img src="/media/icons/"></a>
 </body>
 <!--
