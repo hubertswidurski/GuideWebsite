@@ -1,0 +1,54 @@
+$text-color: rgb(27, 27, 27);
+$blue: rgb(190, 225, 255);
+$lighter-blue: rgb(217, 236, 252);
+$green: rgb(117, 177, 117);
+$red: rgb(145, 83, 83);
+#loc{
+    width:70%;
+    height:40%;
+    padding:1% 5% 2%;
+    position:fixed;
+    top: 20vh;
+    left:15%;
+    border-radius: 5vh 10vw;
+    margin: 0 auto;
+    background: rgba(128, 128, 128, 0.904);
+    display:flex;
+    flex-direction:column;
+    color:white;
+    align-items: center;
+    button{
+        align-self: center;
+        width:40%;
+        height:10%;
+        text-align: center;
+        border-radius: 1vh;
+        border: 2px solid $red;
+        background: $red;
+        color: white;
+    }
+    h2{
+        height: 2%;
+    }
+}
+button.show-localization{
+    width: 20%;
+    height: 3em;
+    border: 2px solid $green;
+    border-radius: 2em;
+    background: white;
+    color:$text-color;
+    align-self:center;
+    &:hover{
+        background: linear-gradient(90deg, rgb(211, 245, 208) 0%, rgba(138,237,129,1) 50%, rgb(211, 245, 208) 100%);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        font-weight: 600;
+    }   
+    
+}
+iframe{
+    width:80%;
+    height: 80%;
+    border-radius: 2vh;
+}

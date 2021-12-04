@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('localization.css');
 $text-color: rgb(27, 27, 27);
 $blue: rgb(190, 225, 255);
 $lighter-blue: rgb(217, 236, 252);
@@ -195,8 +196,8 @@ section{//global
         display:block;
         background: white;
         width: 100%;
-        height: 5vh;
-        padding: 10px 30px 10px 30px;
+        height: 10%;
+        padding: 10px 30px;
         border: 1px solid $text-color;
         border-radius: 20px;
     }
@@ -244,24 +245,10 @@ article.atraction{ //zabytki.html
     width:80%;
     font-size: 1.2em;
     line-height: 1.5em;
-    button.show-localization{
-        width: 20%;
-        height: 3em;
-        border: 1px solid $text-color;
-        border-radius: 2em;
-        background: white;
-        color:$text-color;
-        align-self:center;
-        &:hover{
-            background: $lighter-blue;
-            transition:0.1s
-        }   
-    }
     picture{
-        max-width:60%;
-        padding:0 20%;
         img{
             max-width:80%;
+            max-height: 40%;
             height:auto;
             padding:0 10%;
         }
