@@ -8,18 +8,12 @@ var testv=document.createElement("div");
 testv.innerHTML="test";
 export function changeCountry(child, first){
     if(first){
-        document.querySelector("#countries").classList.add("countries_after");
-        document.querySelector("#countries").classList.remove("countries_before");
-        document.getElementById('explanation').remove();
         document.querySelector("footer").style.display="block";
         let imgs= document.getElementsByClassName("country_img");
         for(let i =0; i<imgs.length; i++){
             imgs[i].style.display="none";
         }
         let borders =document.getElementsByClassName("country_holder_main");
-        for(let i =0; i<borders.length; i++){
-            borders[i].classList.remove("country_holder");
-        }
     }
     const array= document.querySelector("main").children;
     for(let i =0; i< array.length; i++){
