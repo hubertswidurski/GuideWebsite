@@ -29,9 +29,13 @@
   height: 10%;
   text-align: center;
   border-radius: 1vh;
-  border: 2px solid #915353;
-  background: #915353;
+  border: 2px solid #804e4e;
+  background: #d44d4d;
   color: white;
+}
+
+#loc button:hover {
+  background: #cc5959;
 }
 
 #loc h2 {
