@@ -36,6 +36,8 @@
 
 #loc button:hover {
   background: #cc5959;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 #loc h2 {
@@ -66,5 +68,9 @@ iframe {
   width: 80%;
   height: 80%;
   border-radius: 2vh;
+}
+
+.atraction picture {
+  margin: 0 auto;
 }
 /*# sourceMappingURL=localization.css.map */

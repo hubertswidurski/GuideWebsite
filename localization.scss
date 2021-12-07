@@ -29,6 +29,7 @@ $darkred:rgb(128, 78, 78) ;
         color: white;
         &:hover{
             background: $red;
+            transition: 0.3s;
         }
     }
     h2{
@@ -55,4 +56,7 @@ iframe{
     width:80%;
     height: 80%;
     border-radius: 2vh;
+}
+.atraction picture{
+    margin: 0 auto;
 }
