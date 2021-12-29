@@ -116,13 +116,44 @@ section{//global
     }
 }
 @mixin cont{//potrawy.html
-    @include flex-row;
+    @include flex;
     margin-top:1vh;
     width:100%;
     border-radius: 2em;
     align-items:center;
     justify-content: space-between;
     min-height:40vh;
+    .cont-header{
+        @include flex-row;
+        align-self: flex-start;
+        justify-content: space-between;
+        width:80%;
+        padding: 0 10%;
+        background: $text-color;
+        h2{
+            color: white !important;
+            height: 100%;
+        }
+        button{
+            width: 20%;
+            //display: block;
+            background: $text-color;
+            border: none;
+            color: white;
+            &:hover{
+                background:rgb(75, 75, 75);
+            }
+        }
+    }
+    .cont-rest{
+        @include flex-row;
+        width:100%;
+        justify-content: space-evenly;
+        article{
+            align-self: center;
+        }
+    }
+    
     article{
         @include flex;//flex-column
         padding:0 2vh 0 10%;
@@ -147,6 +178,12 @@ section{//global
         }
     }
 }
+.content-zwiniety{
+    display: none !important;
+}
+.zwiniety{
+    min-height: 5vh !important;
+}
 .country-content{//potrawy.html
     @include flex;//flex-column
     justify-content: space-evenly;
@@ -159,6 +196,7 @@ section{//global
         background: $lighter-blue;
         @include cont;
     }
+    
     .container2{
         background: rgb(230, 230, 230);
         @include cont;
