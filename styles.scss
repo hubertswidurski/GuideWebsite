@@ -4,6 +4,7 @@
 $text-color: rgb(27, 27, 27);
 $blue: rgb(190, 225, 255);
 $lighter-blue: rgb(217, 236, 252);
+$gray: rgb(230, 230, 230);
 @mixin flex(){//gloabal
     display: flex;
     flex-direction: column;
@@ -123,28 +124,7 @@ section{//global
     align-items:center;
     justify-content: space-between;
     min-height:40vh;
-    .cont-header{
-        @include flex-row;
-        align-self: flex-start;
-        justify-content: space-between;
-        width:80%;
-        padding: 0 10%;
-        background: $text-color;
-        h2{
-            color: white !important;
-            height: 100%;
-        }
-        button{
-            width: 20%;
-            //display: block;
-            background: $text-color;
-            border: none;
-            color: white;
-            &:hover{
-                background:rgb(75, 75, 75);
-            }
-        }
-    }
+    
     .cont-rest{
         @include flex-row;
         width:100%;
@@ -177,6 +157,38 @@ section{//global
             max-width:100%;
         }
     }
+}
+.cont-header{
+    @include flex-row;
+    align-self: flex-start;
+    justify-content: space-between;
+    width:80%;
+    padding: 0 10%;
+    background: $text-color;
+    h2{
+        display: flex;
+        align-items: center;
+        color: white !important;
+        height: 100%;
+    }
+    button{
+        width: 20%;
+        //display: block;
+        background: $text-color;
+        border: none;
+        color: white;
+        &:hover{
+            background:rgb(75, 75, 75);
+        }
+    }
+}
+.cont-rest-zabytek{
+    padding-top: 1em;
+    border-radius:0 0 2em 2em;
+    @include flex;
+    width:100%;
+    justify-content: space-evenly;
+    background: $gray;
 }
 .content-zwiniety{
     display: none !important;
@@ -281,6 +293,7 @@ article.atraction{ //zabytki.html
     align-items: flex-start;
     min-height:inherit !important;
     width:80%;
+    border-radius: 2em;
     font-size: 1.2em;
     line-height: 1.5em;
     picture{
@@ -294,6 +307,9 @@ article.atraction{ //zabytki.html
     iframe{
         display: block;
         align-self: center;
+    }
+    p{
+        padding:0 5%;
     }
 }
 @media(max-width:768px){
