@@ -6,9 +6,9 @@ function togglepotrawe(btn){
         if(!kids[i].classList.contains("cont-header"))//czy nie jest to pasek górny (wraz z przyciksiem rozwijania):
         kids[i].classList.toggle("content-zwiniety");//jeśli nie to zwiń/rozwiń
     }
-    if(btn.innerHTML=="rozwiń"){
-        btn.innerHTML="zwiń";
+    if(btn.innerHTML.includes("down")){
+        btn.innerHTML="<img src='media/icons/line-angle-up.svg'>";
     }else{
-        btn.innerHTML="rozwiń";
+        btn.innerHTML="<img src='media/icons/line-angle-down.svg'>";
     }
 }

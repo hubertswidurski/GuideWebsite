@@ -186,6 +186,12 @@ section h2 {
   color: white;
 }
 
+.cont-header button img {
+  height: 10%;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
 .cont-header button:hover {
   background: #4b4b4b;
 }
@@ -532,6 +538,70 @@ article.atraction p {
   padding: 0 5%;
 }
 
+section#tradycje-wstep {
+  width: 80%;
+  padding: 0 10%;
+  font-size: 1.2em;
+}
+
+section#tradycje {
+  width: 80%;
+  padding: 0 10%;
+}
+
+section#tradycje p.info, section#tradycje p.promo {
+  padding: 0 2em;
+  font-size: 1.2em;
+}
+
+section#tradycje p.pochodzenie {
+  font-weight: bold;
+}
+
+section#tradycje article {
+  margin-top: 1em;
+  border-radius: 2em;
+  background: #e6e6e6;
+}
+
+section#tradycje article div.cont-rest {
+  display: block;
+  padding: 2em 0;
+}
+
+section#tradycje article div.content-zwiniety {
+  display: none;
+}
+
+section#tradycje picture {
+  padding-top: 2em;
+  max-width: 95%;
+  max-height: 70vh;
+  margin: 0 auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section#tradycje picture img {
+  max-width: 95%;
+  max-height: 60vh;
+  border-radius: 2em;
+}
+
+a.promo {
+  color: #818181;
+  font-size: small;
+  text-decoration: none;
+}
+
 @media (max-width: 768px) {
   #logo {
     display: none;
@@ -559,6 +629,15 @@ article.atraction p {
 @media (max-width: 320px) {
   .nav-button {
     font-size: 0.99rem;
+  }
+  .cont-header h2 {
+    font-size: 1rem !important;
+  }
+  article {
+    font-size: 0.8em;
+  }
+  .cont-rest picture, .cont-rest img {
+    display: none;
   }
 }
 

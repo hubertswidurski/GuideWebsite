@@ -177,6 +177,10 @@ section{//global
         background: $text-color;
         border: none;
         color: white;
+        img{
+            height: 10%;
+            filter: invert(1);
+        }
         &:hover{
             background:rgb(75, 75, 75);
         }
@@ -312,6 +316,56 @@ article.atraction{ //zabytki.html
         padding:0 5%;
     }
 }
+section#tradycje-wstep{
+    width: 80%;
+    padding: 0 10%;
+    font-size: 1.2em;
+}
+section#tradycje{
+    width: 80%;
+    padding: 0 10%;
+    p.info, p.promo{
+        padding: 0 2em;
+        font-size: 1.2em;
+    }
+    p.pochodzenie{
+        font-weight: bold;
+    }
+    article{
+        margin-top: 1em;
+        border-radius: 2em;
+        background:$gray;
+        div.cont-rest{
+            display:block;
+            padding: 2em 0;
+        }
+        div.content-zwiniety{
+            display:none;
+        }
+    }
+    picture{
+        padding-top: 2em;
+        max-width:95%;
+        max-height: 70vh;
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            max-width:95%;
+            max-height: 60vh;
+            border-radius: 2em;
+        }
+    }
+    
+}
+a.promo{
+    color: rgb(129, 129, 129);
+    font-size: small;
+    text-decoration: none;
+}
+//responsywność:
 @media(max-width:768px){
     #logo{
         display:none;
@@ -330,6 +384,19 @@ article.atraction{ //zabytki.html
 @media(max-width:320px){
     .nav-button{
         font-size: 0.99rem;
+    }
+    .cont-header{
+        h2{
+            font-size: 1rem !important;
+        }
+    }
+    article{
+        font-size:0.8em;
+    }
+    .cont-rest{
+        picture, img{
+            display: none;
+        }
     }
 }
 @media(min-width:1440px){
