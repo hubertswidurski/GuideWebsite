@@ -19,21 +19,12 @@
     </div>
     <!--wybór kraju:-->
     
-    <div id="countries" class="countries_after">
-        <h2 id="explanation" style="color:rgb(27, 27, 27); padding-right:10%; font-weight: 400;">Filtruj według kraju:</h2>
-        <div class="country_holder_main">
-            <button type="button" id="anglia" href="#">Anglia</button>
-        </div>
-        <div class="country_holder_main">
-            <button type="button" id="walia" href="#">Walia</button>
-        </div>
-        <div class="country_holder_main">
-            <button type="button" id="szkocja" href="#">Szkocja</button>
-        </div>
-        <div class="country_holder_main">
-            <button type="button" id="irlandia" href="#">Irlandia Północna</button>
-        </div>
-    </div>
+    <div id="Filtry">
+        <div><input type="checkbox" name="sel-countries" id="check-anglia" checked onchange="filtrZabytki()">anglia</div>
+        <div><input type="checkbox" name="sel-countries" id="check-walia" checked onchange="filtrZabytki()">walia</div>
+        <div><input type="checkbox" name="sel-countries" id="check-szkocja" checked onchange="filtrZabytki()">szkocja</div>
+        <div><input type="checkbox" name="sel-countries" id="check-irlandia" checked onchange="filtrZabytki()">irlandia</div>
+     </div>
     <main style="width: 90vw; padding: 0 5vh 0 5vh;">
         <div id="loc" style="display: none;">
             <h2>Lokalizacja</h2>
@@ -303,6 +294,7 @@
     <script type="module" src="js/zabytki.js"></script>
     <script src="js/localization.js"></script>
     <script src="js/rozwin.js"></script>
+    <script src="js/filtr.js"></script>
     <footer style="display: none;">Created by <b>Hubert Świdurski, Szymon praczkowski</b></footer>
     <a id="topper" href="#"><img src="/media/icons/"></a>
 </body>

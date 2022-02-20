@@ -453,6 +453,26 @@ section h2 {
   overflow: hidden;
 }
 
+#Filtry {
+  background: #818181;
+  position: fixed;
+  top: 20vh;
+  right: -25vw;
+  width: 30vw;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#filtry:hover {
+  right: 0vw;
+}
+
 .countries_after {
   display: -webkit-box;
   display: -ms-flexbox;

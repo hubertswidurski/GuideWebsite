@@ -255,6 +255,18 @@ section{//global
     height:fit-content;
     overflow: hidden;
 }
+#Filtry{
+    background:rgb(129, 129, 129);
+    position:fixed;
+    top:20vh;
+    right:-25vw;
+    width: 30vw;
+    height:20vh;
+    @include flex;
+}
+#filtry:hover{
+    right:0vw;
+}
 .countries_after{//gloabal
     //po wybraniu jednego z krajów
     display:flex;

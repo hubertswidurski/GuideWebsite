@@ -25,6 +25,12 @@
             <p>Wielka Brytania jest państwem wielonarodowościowym. Mieszają się tu kultury i obyczaje Angielskie, Szkockie, Walijskie i Irlandzkie.
                 Jeśli planujesz je odwiedzić, lub chcesz dowiedzieć się więcej o tamtejszym życiu, musisz koniecznie poznać miejscowe zwyczaje. Miłego czytania!</p>
         </section>
+        <div id="Filtry">
+            <div><input type="checkbox" name="sel-countries" id="check-anglia" checked onchange="filtrTradycje()">anglia</div>
+            <div><input type="checkbox" name="sel-countries" id="check-walia" checked onchange="filtrTradycje()">walia</div>
+            <div><input type="checkbox" name="sel-countries" id="check-szkocja" checked onchange="filtrTradycje()">szkocja</div>
+            <div><input type="checkbox" name="sel-countries" id="check-irlandia" checked onchange="filtrTradycje()">irlandia</div>
+         </div>
         <section id="tradycje">
             <article class="anglia">
                 <div class="cont-header"><h2>Guy Fawkes Night</h2><button type="button" onclick="togglepotrawe(this)"><img src="media/icons/line-angle-down.svg"></button></div>
@@ -322,6 +328,7 @@
         
     </main>
     <script src="js/rozwin.js"></script>
+    <script src="js/filtr.js"></script>
    <footer>Created by <b>Hubert Świdurski, Szymon praczkowski</b></footer>
 </body>
 </html>
