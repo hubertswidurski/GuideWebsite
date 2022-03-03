@@ -20,12 +20,15 @@
     <!--wybór kraju:-->
     
     <div id="Filtry">
+        <div class="napis">F<br>I<br>L<br>T<br>R<br>Y<br></div>
+        <div class="checkcholder">
         <div><input type="checkbox" name="sel-countries" id="check-anglia" checked onchange="filtrZabytki()">anglia</div>
         <div><input type="checkbox" name="sel-countries" id="check-walia" checked onchange="filtrZabytki()">walia</div>
         <div><input type="checkbox" name="sel-countries" id="check-szkocja" checked onchange="filtrZabytki()">szkocja</div>
         <div><input type="checkbox" name="sel-countries" id="check-irlandia" checked onchange="filtrZabytki()">irlandia</div>
+        </div>
      </div>
-    <main style="width: 90vw; padding: 0 5vh 0 5vh;">
+    <main style="width: 90vw; padding: 0 5vh 0 5vh; margin-top:11vh;">
         <div id="loc" style="display: none;">
             <h2>Lokalizacja</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.176694069808!2d-2.6300439840555168!3d51.45491222236022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b536e385dd53%3A0xed9161d2e926ecce!2sMost%20Wisz%C4%85cy%20Clifton!5e0!3m2!1spl!2spl!4v1638620433802!5m2!1spl!2spl" loading="lazy"></iframe>
@@ -36,8 +39,8 @@
         <section id="sec-anglia" class="country-content">
             <h1>Atrakckje Anglii</h1><br>
             <article class="atraction">
-                <div class="cont-header"><h2>Clifton Suspension bridge</h2><button type="button" onclick="togglepotrawe(this)">rozwiń</button></div>
-                <div class="cont-rest-zabytek content-zwiniety">
+                <div class="cont-header atrakcje-header"><h2>Clifton Suspension bridge</h2><button type="button" onclick="togglezabytki(this)"><img src="media/icons/line-angle-down.svg"></button></div>
+                <div class="cont-rest-zabytek background1 content-zwiniety">
                 <picture>
                     <img src="media/img/atrakcje/clifton-suspension-bridge.jpg" alt="Clifton Suspension bridge">
                 </picture>
@@ -48,8 +51,8 @@
                 </div>
             </article>
             <article class="atraction">
-                <div class="cont-header"><h2>Pałac Westminsterski</h2><button type="button" onclick="togglepotrawe(this)">rozwiń</button></div>
-                <div class="cont-rest-zabytek content-zwiniety">
+                <div class="cont-header atrakcje-header"><h2>Pałac Westminsterski</h2><button type="button" onclick="togglezabytki(this)"><img src="media/icons/line-angle-down.svg"></button></div>
+                <div class="cont-rest-zabytek background2 content-zwiniety">
                 <picture>
                     <img src="media/img/atrakcje/Westminster.jpg" alt="Pałac Westminsterski">
                 </picture>
@@ -60,8 +63,8 @@
                 </div>
             </article>
             <article class="atraction">
-                <div class="cont-header"><h2>Royal Albert Hall</h2><button type="button" onclick="togglepotrawe(this)">rozwiń</button></div>
-                <div class="cont-rest-zabytek content-zwiniety">
+                <div class="cont-header atrakcje-header"><h2>Royal Albert Hall</h2><button type="button" onclick="togglezabytki(this)"><img src="media/icons/line-angle-down.svg"></button></div>
+                <div class="cont-rest-zabytek background1 content-zwiniety">
                 <picture>
                     <img src="media/img/atrakcje/royal-albert-hall.jpg" alt="Royal Albert Hall">
                 </picture>
@@ -73,8 +76,8 @@
                 </div>
             </article>
             <article class="atraction">
-                <div class="cont-header"><h2>York Minster</h2><button type="button" onclick="togglepotrawe(this)">rozwiń</button></div>
-                <div class="cont-rest-zabytek content-zwiniety">
+                <div class="cont-header atrakcje-header"><h2>York Minster</h2><button type="button" onclick="togglezabytki(this)"><img src="media/icons/line-angle-down.svg"></button></div>
+                <div class="cont-rest-zabytek background2 content-zwiniety">
                 <picture>
                     <img src="media/img/atrakcje/york-minster.jpg" alt="York Minster">
                 </picture>
@@ -85,8 +88,8 @@
                 </div>
             </article>
             <article class="atraction">
-                <div class="cont-header"><h2>The British Museum</h2><button type="button" onclick="togglepotrawe(this)">rozwiń</button></div>
-                <div class="cont-rest-zabytek content-zwiniety">
+                <div class="cont-header atrakcje-header"><h2>The British Museum</h2><button type="button" onclick="togglezabytki(this)"><img src="media/icons/line-angle-down.svg"></button></div>
+                <div class="cont-rest-zabytek background1 content-zwiniety">
                 <picture>
                     <img src="media/img/atrakcje/british-museum.jpg" alt="The British Museum">
                 </picture>
@@ -101,8 +104,8 @@
         <section id="sec-walia" class="country-content">
             <h1>Atrakckje Walii</h1><br>
             <article class="atraction">
-                <div class="cont-header"><h2>Akwedukt i kanał Pontcysyllte</h2><button type="button" onclick="togglepotrawe(this)">rozwiń</button></div>
-                <div class="cont-rest-zabytek content-zwiniety">
+                <div class="cont-header atrakcje-header"><h2>Akwedukt i kanał Pontcysyllte</h2><button type="button" onclick="togglezabytki(this)"><img src="media/icons/line-angle-down.svg"></button></div>
+                <div class="cont-rest-zabytek background2 content-zwiniety">
                 <picture>
                     <img src="media/img/atrakcje/Pontcysyllte.jpg" alt="Akwedukt i kanał Pontcysyllte">
                 </picture>
@@ -113,8 +116,8 @@
                 </div>
             </article>
             <article class="atraction">
-                <div class="cont-header"><h2>Bron-Yr-Aur</h2><button type="button" onclick="togglepotrawe(this)">rozwiń</button></div>
-                <div class="cont-rest-zabytek content-zwiniety">
+                <div class="cont-header atrakcje-header"><h2>Bron-Yr-Aur</h2><button type="button" onclick="togglezabytki(this)"><img src="media/icons/line-angle-down.svg"></button></div>
+                <div class="cont-rest-zabytek background1 content-zwiniety">
                 <picture>
                     <img src="media/img/atrakcje/BRON-YR-AUR-15.jpg" alt="Bron-Yr-Aur">
                 </picture>
@@ -125,8 +128,8 @@
                 </div>
             </article>
             <article class="atraction">
-                <div class="cont-header"><h2>Kaplica św. Govana</h2><button type="button" onclick="togglepotrawe(this)">rozwiń</button></div>
-                <div class="cont-rest-zabytek content-zwiniety">
+                <div class="cont-header atrakcje-header"><h2>Kaplica św. Govana</h2><button type="button" onclick="togglezabytki(this)"><img src="media/icons/line-angle-down.svg"></button></div>
+                <div class="cont-rest-zabytek background2 content-zwiniety">
                 <picture>
                     <img src="media/img/atrakcje/st-govans-chapel.jpg" alt="Kaplica św. Govana ">
                 </picture>
@@ -137,8 +140,8 @@
                 </p></div>
             </article>
             <article class="atraction">
-                <div class="cont-header"><h2>Plas Mawr</h2><button type="button" onclick="togglepotrawe(this)">rozwiń</button></div>
-                <div class="cont-rest-zabytek content-zwiniety">
+                <div class="cont-header atrakcje-header"><h2>Plas Mawr</h2><button type="button" onclick="togglezabytki(this)"><img src="media/icons/line-angle-down.svg"></button></div>
+                <div class="cont-rest-zabytek background1 content-zwiniety">
                 <picture>
                     <img src="media/img/atrakcje/Plas_Mawr.jpg" alt="Plas Mawr">
                 </picture>
@@ -149,8 +152,8 @@
                 </div>
             </article>
             <article class="atraction">
-                <div class="cont-header"><h2>Y Gaer</h2><button type="button" onclick="togglepotrawe(this)">rozwiń</button></div>
-                <div class="cont-rest-zabytek content-zwiniety">
+                <div class="cont-header atrakcje-header"><h2>Y Gaer</h2><button type="button" onclick="togglezabytki(this)"><img src="media/icons/line-angle-down.svg"></button></div>
+                <div class="cont-rest-zabytek background2 content-zwiniety">
                 <picture>
                     <img src="media/img/atrakcje/Y_Gaer.jpg" alt="Y Gaer">
                 </picture>
@@ -165,8 +168,8 @@
         <section id="sec-szkocja" class="country-content">
             <h1>Atrakckje Szkocjii</h1><br>
             <article class="atraction">
-                <div class="cont-header"><h2>Archikatedra Najświętszej Maryi Panny Wniebowziętej</h2><button type="button" onclick="togglepotrawe(this)">rozwiń</button></div>
-                <div class="cont-rest-zabytek content-zwiniety">
+                <div class="cont-header atrakcje-header"><h2>Archikatedra Najświętszej Maryi Panny Wniebowziętej</h2><button type="button" onclick="togglezabytki(this)"><img src="media/icons/line-angle-down.svg"></button></div>
+                <div class="cont-rest-zabytek background1 content-zwiniety">
                 <picture>
                     <img src="media/img/atrakcje/Cathedral.png" alt="Archikatedra Najświętszej Maryi Panny Wniebowziętej">
                 </picture>
@@ -177,8 +180,8 @@
                 </div>
             </article>
             <article class="atraction">
-                <div class="cont-header"><h2>Wieża Orchardton</h2><button type="button" onclick="togglepotrawe(this)">rozwiń</button></div>
-                <div class="cont-rest-zabytek content-zwiniety">
+                <div class="cont-header atrakcje-header"><h2>Wieża Orchardton</h2><button type="button" onclick="togglezabytki(this)"><img src="media/icons/line-angle-down.svg"></button></div>
+                <div class="cont-rest-zabytek background2 content-zwiniety">
                 <picture>
                     <img src="media/img/atrakcje/Orchardton_Tower.jpg" alt="Wieża Orchardton">
                 </picture>
@@ -189,8 +192,8 @@
                 </div>
             </article>
             <article class="atraction">
-                <div class="cont-header"><h2>Pałac Dunfermline</h2><button type="button" onclick="togglepotrawe(this)">rozwiń</button></div>
-                <div class="cont-rest-zabytek content-zwiniety">
+                <div class="cont-header atrakcje-header"><h2>Pałac Dunfermline</h2><button type="button" onclick="togglezabytki(this)"><img src="media/icons/line-angle-down.svg"></button></div>
+                <div class="cont-rest-zabytek background1 content-zwiniety">
                 <picture>
                     <img src="media/img/atrakcje/dunfermline.jpg" alt="Pałac Dunfermline">
                 </picture>
@@ -202,8 +205,8 @@
                 </div>
             </article>
             <article class="atraction">
-                <div class="cont-header"><h2>Soutra Aisle</h2><button type="button" onclick="togglepotrawe(this)">rozwiń</button></div>
-                <div class="cont-rest-zabytek content-zwiniety">
+                <div class="cont-header atrakcje-header"><h2>Soutra Aisle</h2><button type="button" onclick="togglezabytki(this)"><img src="media/icons/line-angle-down.svg"></button></div>
+                <div class="cont-rest-zabytek background2 content-zwiniety">
                 <picture>
                     <img src="media/img/atrakcje/Soutra-Aisle.jpg" alt="Soutra Aisle">
                 </picture>
@@ -214,8 +217,8 @@
                 </div>
             </article>
             <article class="atraction">
-                <div class="cont-header"><h2>Wielka Polska Mapa Szkocji</h2><button type="button" onclick="togglepotrawe(this)">rozwiń</button></div>
-                <div class="cont-rest-zabytek content-zwiniety">
+                <div class="cont-header atrakcje-header"><h2>Wielka Polska Mapa Szkocji</h2><button type="button" onclick="togglezabytki(this)"><img src="media/icons/line-angle-down.svg"></button></div>
+                <div class="cont-rest-zabytek background1 content-zwiniety">
                 <picture>
                     <img src="media/img/atrakcje/polska-mapa-szkocji.jpeg" alt="Wielka Polska Mapa Szkocji">
                 </picture>
@@ -230,8 +233,8 @@
         <section id="sec-irlandia" class="country-content">
             <h1>Atrakckje Irlandii Północnej</h1><br>
             <article class="atraction">
-                <div class="cont-header"><h2>Dunluce Castle</h2><button type="button" onclick="togglepotrawe(this)">rozwiń</button></div>
-                <div class="cont-rest-zabytek content-zwiniety">
+                <div class="cont-header atrakcje-header"><h2>Dunluce Castle</h2><button type="button" onclick="togglezabytki(this)"><img src="media/icons/line-angle-down.svg"></button></div>
+                <div class="cont-rest-zabytek background2 content-zwiniety">
                 <picture>
                     <img src="media/img/atrakcje/Dunluce-Castle.jpg" alt="Dunluce Castle">
                 </picture>
@@ -242,8 +245,8 @@
                 </div>
             </article>
             <article class="atraction">
-                <div class="cont-header"><h2>Giant's Causeway (Grobla Olbrzyma)</h2><button type="button" onclick="togglepotrawe(this)">rozwiń</button></div>
-                <div class="cont-rest-zabytek content-zwiniety">
+                <div class="cont-header atrakcje-header"><h2>Giant's Causeway (Grobla Olbrzyma)</h2><button type="button" onclick="togglezabytki(this)"><img src="media/icons/line-angle-down.svg"></button></div>
+                <div class="cont-rest-zabytek background1 content-zwiniety">
                 <picture>
                     <img src="media/img/atrakcje/causeway.jpg" alt="Giant's Causeway">
                 </picture>
@@ -254,8 +257,8 @@
                 </div>
             </article>
             <article class="atraction">
-                <div class="cont-header"><h2>Most linowy Carrick-a-Rede</h2><button type="button" onclick="togglepotrawe(this)">rozwiń</button></div>
-                <div class="cont-rest-zabytek content-zwiniety">
+                <div class="cont-header atrakcje-header"><h2>Most linowy Carrick-a-Rede</h2><button type="button" onclick="togglezabytki(this)"><img src="media/icons/line-angle-down.svg"></button></div>
+                <div class="cont-rest-zabytek background2 content-zwiniety">
                 <picture>
                     <img src="media/img/atrakcje/carrick-a-rede.jpg" alt="zdjęcie Carrick-a-Rede">
                 </picture>
@@ -266,8 +269,8 @@
                 </div>
             </article>
             <article class="atraction">
-                <div class="cont-header"><h2>Mourne Mountains</h2><button type="button" onclick="togglepotrawe(this)">rozwiń</button></div>
-                <div class="cont-rest-zabytek content-zwiniety">
+                <div class="cont-header atrakcje-header"><h2>Mourne Mountains</h2><button type="button" onclick="togglezabytki(this)"><img src="media/icons/line-angle-down.svg"></button></div>
+                <div class="cont-rest-zabytek background1 content-zwiniety">
                 <picture>
                     <img src="media/img/atrakcje/Mournes_wiki.jpg" alt="Mourne Mountains">
                 </picture>
@@ -278,8 +281,8 @@
                 </div>
             </article>
             <article class="atraction">
-                <div class="cont-header"><h2>Scrabo Tower</h2><button type="button" onclick="togglepotrawe(this)">rozwiń</button></div>
-                <div class="cont-rest-zabytek content-zwiniety">
+                <div class="cont-header atrakcje-header"><h2>Scrabo Tower</h2><button type="button" onclick="togglezabytki(this)"><img src="media/icons/line-angle-down.svg"></button></div>
+                <div class="cont-rest-zabytek background2 content-zwiniety">
                 <picture>
                     <img src="media/img/atrakcje/Scrabo_Tower.jpg" alt="Scrabo Tower">
                 </picture>
@@ -296,7 +299,7 @@
     <script src="js/rozwin.js"></script>
     <script src="js/filtr.js"></script>
     <footer style="display: none;">Created by <b>Hubert Świdurski, Szymon praczkowski</b></footer>
-    <a id="topper" href="#"><img src="/media/icons/"></a>
+    <a id="topper" href="#"><img src='media/icons/line-angle-up.svg'></a>
 </body>
 <!--
                         _.-..

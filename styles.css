@@ -20,37 +20,8 @@ body, html {
   padding: 0;
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
-}
-
-#przepis {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: fixed;
-  z-index: 2;
-  left: 25%;
-  width: 50vw;
-  height: 10vh;
-  background: rgba(27, 27, 27, 0.95);
-  color: white;
-  border-radius: 1em;
-}
-
-#przepis button {
-  padding: 5px 10px;
-  width: 6em;
-  border: 1px solid white;
-  border-radius: 1em;
+  scroll-behavior: smooth;
+  background-color: #9197AE;
 }
 
 #nav-bar {
@@ -77,9 +48,9 @@ body, html {
   width: 100%;
   height: 10vh;
   /*visual*/
-  background-color: #bee1ff;
+  background-color: #273043;
   border-bottom: solid 2px #1b1b1b;
-  color: #1b1b1b;
+  color: white;
 }
 
 #logo {
@@ -89,6 +60,7 @@ body, html {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  color: #EFF6EE;
 }
 
 #links {
@@ -109,25 +81,42 @@ body, html {
   margin: 0 10px 0 10px;
   text-align: center;
   text-decoration: none;
-  color: #1b1b1b;
+  color: #EFF6EE;
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
 }
 
 #topper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: fixed;
-  bottom: 1vh;
+  bottom: 2vh;
   right: 1vh;
-  width: 2vw;
-  height: 2vw;
+  width: 4vw;
+  height: 4vw;
   background: #8f2929;
   border-radius: 50%;
+  z-index: 3;
+}
+
+#topper img {
+  margin: 0 auto;
+  -webkit-filter: invert(100);
+          filter: invert(100);
+  max-width: 0.8em;
 }
 
 main {
   font-family: 'Lato', sans-serif;
   width: auto;
-  margin-top: 5vh;
+  margin-top: 11vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,7 +164,7 @@ picture#GB-flag img {
   padding: 5% 5%;
   position: absolute;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.514);
+  background: #9197aeaf;
 }
 
 section {
@@ -195,6 +184,9 @@ section h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  height: 2em;
   -ms-flex-item-align: start;
       align-self: flex-start;
   -webkit-box-pack: justify;
@@ -202,7 +194,7 @@ section h2 {
           justify-content: space-between;
   width: 80%;
   padding: 0 10%;
-  background: #1b1b1b;
+  background: #C90321;
 }
 
 .cont-header h2 {
@@ -212,25 +204,36 @@ section h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white !important;
-  height: 100%;
+  padding: 0;
+  margin: 0 auto;
+  font-size: 1em;
+  color: #EFF6EE !important;
+  height: 100% !important;
 }
 
 .cont-header button {
   width: 20%;
-  background: #1b1b1b;
+  height: 100%;
+  margin: 0;
+  background: #C90321;
   border: none;
   color: white;
 }
 
 .cont-header button img {
-  height: 10%;
+  height: 0.5em;
   -webkit-filter: invert(1);
           filter: invert(1);
 }
 
 .cont-header button:hover {
-  background: #4b4b4b;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  background: #be0521;
+}
+
+.cont-header-potrtawy {
+  height: 2em;
 }
 
 .cont-rest-zabytek {
@@ -248,6 +251,7 @@ section h2 {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   background: #e6e6e6;
+  font-size: 0.9em;
 }
 
 .content-zwiniety {
@@ -273,12 +277,13 @@ section h2 {
 }
 
 .country-content h1 {
-  font-size: 2.5em;
+  font-size: 1.5em;
   color: #1b1b1b;
 }
 
 .country-content .container1 {
-  background: #d9ecfc;
+  background: #65697a;
+  color: #EFF6EE;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,6 +291,8 @@ section h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
   margin-top: 1vh;
   width: 100%;
   border-radius: 2em;
@@ -295,7 +302,7 @@ section h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 40vh;
+  height: auto;
 }
 
 .country-content .container1 .cont-rest {
@@ -337,7 +344,7 @@ section h2 {
           align-items: flex-start;
   min-height: inherit !important;
   width: 40%;
-  font-size: 1.2em;
+  font-size: 0.95em !important;
   line-height: 1.5em;
 }
 
@@ -356,7 +363,8 @@ section h2 {
 }
 
 .country-content .container2 {
-  background: #e6e6e6;
+  background: #384561;
+  color: #EFF6EE;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -364,6 +372,8 @@ section h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
   margin-top: 1vh;
   width: 100%;
   border-radius: 2em;
@@ -373,7 +383,7 @@ section h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 40vh;
+  height: auto;
 }
 
 .country-content .container2 .cont-rest {
@@ -415,7 +425,7 @@ section h2 {
           align-items: flex-start;
   min-height: inherit !important;
   width: 40%;
-  font-size: 1.2em;
+  font-size: 0.95em !important;
   line-height: 1.5em;
 }
 
@@ -433,8 +443,28 @@ section h2 {
   max-width: 100%;
 }
 
+.background1 {
+  color: #EFF6EE !important;
+  background: #65697a !important;
+}
+
+.background2 {
+  color: #EFF6EE !important;
+  background: #384561 !important;
+}
+
+.atrakcje-header {
+  border-radius: 2em !important;
+}
+
+.atrakcje-header-after {
+  border-radius: 2em 2em 0 0 !important;
+}
+
 #o_stronie, #WB {
   /*o stronie w index.html i wielka brytania index.html*/
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -454,12 +484,42 @@ section h2 {
 }
 
 #Filtry {
-  background: #818181;
+  z-index: 100;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  background: rgba(39, 48, 67, 0.9);
   position: fixed;
   top: 20vh;
-  right: -25vw;
-  width: 30vw;
-  height: 20vh;
+  right: -3em;
+  width: 5em;
+  min-height: 10em;
+  border-radius: 0.5em 0 0 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#Filtry div {
+  margin: 0.2em 0;
+  color: #EFF6EE;
+  font-weight: bold;
+}
+
+#Filtry div.napis {
+  justify-self: flex-start;
+  font-weight: bold;
+  color: white;
+  width: 4em;
+  height: 10em;
+  margin-left: 0.3em;
+  margin-top: 0.5em;
+}
+
+#Filtry div.checkholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -469,8 +529,20 @@ section h2 {
           flex-direction: column;
 }
 
-#filtry:hover {
-  right: 0vw;
+#Filtry input[type='checkbox'] {
+  background-color: #313131;
+  border: 2px solid white;
+}
+
+#Filtry input[type='checkbox']:checked {
+  background: white;
+}
+
+#Filtry:hover {
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  right: 0;
+  width: 30vw;
 }
 
 .countries_after {
@@ -551,6 +623,8 @@ footer {
   color: white;
   padding: 1vh 0;
   margin-top: 1vh;
+  position: relative;
+  z-index: 10;
 }
 
 article.atraction {
@@ -561,7 +635,7 @@ article.atraction {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 2vh 10%;
+  padding: 0.5vh 0;
   -ms-flex-item-align: center;
       align-self: center;
   -webkit-box-pack: center;
@@ -598,7 +672,11 @@ article.atraction p {
 section#tradycje-wstep {
   width: 80%;
   padding: 0 10%;
-  font-size: 1.2em;
+  font-size: 1em;
+}
+
+section#tradycje-wstep h2 {
+  font-size: 1.5em;
 }
 
 section#tradycje {
@@ -714,10 +792,34 @@ a.promo {
   }
   #GB-cont p#what-is-gb {
     position: relative;
-    background: none;
+    background: #9197AE;
     width: 100%;
     margin: 0;
     padding: 0;
+  }
+}
+
+@media (min-height: 670px) {
+  .cont-header-potrtawy {
+    height: 2.5em;
+  }
+}
+
+@media (min-height: 900px) {
+  .cont-header-potrawy {
+    height: 3.5em;
+  }
+  .cont-header-potrawy img {
+    height: 2.5em;
+  }
+}
+
+@media (min-width: 1040px) {
+  .cont-rest article {
+    font-size: 2em !important;
+  }
+  section#tradycje article {
+    font-size: 1.5em;
   }
 }
 /*# sourceMappingURL=styles.css.map */
