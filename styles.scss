@@ -207,6 +207,10 @@ section{//global
         font-size:1em;
         color: $light-text !important;
         height:100% !important;
+        width:fit-content;
+    }
+    .dlugie{
+        font-size: 0.9em;
     }
     button{
         width: 20%;
@@ -495,6 +499,9 @@ a.promo{
             max-width: 70vw;
         }
     }
+    .cont-header{
+        height:2.6em;
+    }
 }
 @media(max-width:500px){
     h1, h2{
@@ -519,6 +526,11 @@ a.promo{
         img{
             max-height: 200vh;
             max-width: 100vw;
+        }
+    }
+    .cont-rest-zabytek{
+        button{
+            width: 50vw;
         }
     }
 }
@@ -585,20 +597,31 @@ a.promo{
         }
     }
 }
-@media(min-width:1040px){
+@media(min-width:1024px){
     .cont-rest{
         article{
-            font-size: 2em !important;
+            font-size: 1em !important;
         }
     }
     section#tradycje{
         article{
-            font-size:1.5em;
+            font-size:1em;
         }
     }
 }
 @media(max-height:600px){
     #logo{
         font-size: 2em;
+    }
+}
+@media(max-height:700px){
+    #loc{
+        max-height: 80vh;
+        h2{
+            font-size: 1em;
+        }
+        button{
+            height: 5em;
+        }
     }
 }
