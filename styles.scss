@@ -11,6 +11,10 @@ $main-light: #9197AE;
 $cont1-color:#65697a;
 $cont2-color:#384561;
 $contrast:#C90321;//#DD0426;
+p{
+    height:auto;
+    overflow: hidden;
+}
 @mixin flex(){//gloabal
     display: flex;
     flex-direction: column;
@@ -91,11 +95,11 @@ body, html{//gloabal
     position:fixed;
     bottom:2vh;
     right:1vh;
-    width: 4vw;
-    height:4vw;
+    width: 50px;
+    height:50px;
     background:rgb(143, 41, 41);
     border-radius: 50%;
-    z-index:3;
+    z-index:100;
     img{
         margin:0 auto;
         filter: invert(100);
