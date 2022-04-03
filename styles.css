@@ -807,9 +807,9 @@ a.promo {
   article {
     font-size: 0.8em;
   }
-  #WB img {
-    max-height: 200vh;
-    max-width: 100vw;
+  #map-evolution img {
+    width: 100vw !important;
+    height: 50%;
   }
   .cont-rest-zabytek button {
     width: 50vw;
